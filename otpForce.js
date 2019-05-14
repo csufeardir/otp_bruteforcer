@@ -1,3 +1,5 @@
+var C1; // Cryptext 1
+var C2; // Cryptext 2
 var fs = require('fs'),
     readline = require('readline');
 
