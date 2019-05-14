@@ -1,15 +1,12 @@
-const C1 = '00010110 00000101 00011000 00000011 00001000 00011110 00010110 00001011 00000101 00001101 00011010 00001111'
-const C2 = '00011001 00000011 00010110 00000110 00010011 00010101 00001111 00011101 00010000 00000100 00000111 00001001'
-
 var fs = require('fs'),
     readline = require('readline');
 
 var rd = readline.createInterface({
-    input: fs.createReadStream('C:\\Users\\Onur\\Desktop\\dic.txt'), // Dictionary File Location
+    input: fs.createReadStream(''), // Dictionary File Location
     output: process.stdout,
     console: false
 });
-console.log('Key' + "            " + 'P1' + "           " + 'P2\n')
+
 rd.on('line', function(line) {
     if(line.length==12){
         var Key1 = textToBin((line))
